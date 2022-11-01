@@ -3,7 +3,8 @@ def calc_max():
         a=[int(x) 
         for x in list(file.readlines()) 
         if x[:-1].isnumeric()]
-    with open('file', 'a', encoding='UTF-8') as file:
+    with open('file', 'w', encoding='UTF-8') as file:
         file.write(str(sum(a))+'\n')
         file.write(str(max(a))+'\n')
+
 calc_max()
